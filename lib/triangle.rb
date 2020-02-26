@@ -14,9 +14,6 @@ class Triangle
   def isosceles?
     (@length1 == @length2 && @length3 != @length1) || (@length2 == @length3 && @length1 != @length2) || (@length1 == @length3 && @length2 != @length3)
   end
-  def scalene?
-    (@length1 != @length2) && (@length1 != @length3) && (@length3 != @length2)
-  end
   def lessThanZero
     @sides.select do |length|
       length <= 0
