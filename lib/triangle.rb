@@ -38,6 +38,23 @@ class Triangle
       raise TriangleError
     end
   end
+  # def kind
+  #   if @length1 < @length2 + @length3 && @length2 < @length1 + @length3 && @length3 < @length1 + @length2
+  #     if @length1 && @length2 && @length3 > 0
+  #       if @length1 == @length2 && @length3 != @length2 || @length2 == @length3 && @length1 != @length3 || @length3 == @length1 && @length2 != @length1
+  #         return :isosceles
+  #       elsif @length1 == @length2 && @length2 == @length3
+  #         return :equilateral
+  #       else
+  #         return :scalene
+  #       end
+  #     else
+  #         raise TriangleError
+  #     end
+  #   else 
+  #       raise TriangleError
+  #   end
+  # end
   class TriangleError < StandardError
     def message
       "This isnt a valid Triangle"
