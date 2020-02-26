@@ -8,10 +8,7 @@ class Triangle
   end
 
   def kind
-    if sideOne == 0 && sideTwo == 0 && sideThree == 0
-       raise TriangleError
-    end 
-    if sideOne < 0 || sideTwo < 0 || sideThree < 0 
+    if sideOne <= 0 || sideTwo <= 0 || sideThree <= 0 
       raise TriangleError
     end
     if sideOne + sideTwo <= sideThree || sideOne + sideThree <= sideTwo || sideThree + sideTwo <= sideOne
